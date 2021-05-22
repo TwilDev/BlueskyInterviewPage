@@ -1,0 +1,50 @@
+.body {
+  font-family:
+}
+
+.navbar {
+  height : 5rem;
+}
+
+.main-head {
+  margin-bottom: 5rem;
+}
+
+.main-head-container {
+  position : relative;
+  text-align: center;
+}
+
+.img-main {
+   filter: brightness(60%);
+    width: 100%;
+}
+
+.img-overlay {
+  adding-top : 28r;
+  position : absolute;
+  color : #FFF;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-overlay h1 {
+    font-size: 3.5rem;
+}
+
+.focus-container {
+  margin: auto;
+  padding-bottom : 5rem;
+}
+
+.focus-info-1 {
+ margin-left : 5rem;
+ padding-bottom : 5rem;
+}
+
+.focus-info-2 {
+  margin-left: auto;
+  margin-right : 5rem;
+  padding-bottom : 5rem;
+}
