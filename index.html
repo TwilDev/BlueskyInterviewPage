@@ -5,39 +5,83 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link href="css/hamburgers.css" rel="stylesheet">
+  <script src="js/animate.js"></script>
+  <script src="js/nav.js"></script>
 </head>
 
 <body class="body">
   <section class="main-head">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <a class="navbar-brand" href="#">Premium VW</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
+  <header>
+      <nav class="navbar navbar-expand-sm navbar-light bg-white">
+        <button class="hamburger hamburger--slider" type="button">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            <span class="hamburger-label">Menu</span>
+            </span>
+
+        </button>
+
+        <a class="navbar-brand" href="#">Premium <img src="img/volkswagen.svg" class="vw-main"> </a>
+      </nav>
+  </header>
   <div class="main-head-container">
     <div class="img-container">
       <img src="img/e-golf-11.jpg" class="img-fluid img-main" alt="main-banner">
     </div>
     <div class="img-overlay">
       <h1>Powerful, Sustainable, efficient.</h1>
+      <button class="btn-action">Register Interest</button>
     </div>
   </div>
   </section>
 
+  <div class="overlay-nav-sidebar">
+    <div class="overlay-nav-sidebar-container">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">Home</a>
+        <a href="#" class="list-group-item list-group-item-action">New Models</a>
+        <a href="#" class="list-group-item list-group-item-action">Electric Cars</a>
+        <a href="#" class="list-group-item list-group-item-action">Used Cars</a>
+        <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row main-title">
+    <div class="title-container">
+      <div class="title-style title-style-before col-sm-3">
+      </div>
+      <div class="title-style title-style-layer col-sm-4">
+        <span class="title-style-inner">
+          <h1 class="title-head-1">Volkswagen</h1>
+          <img src="img/volkswagen.svg" class="vw-min">
+          <h1 class="title-head-2">e-Golf</h1>
+        </span>
+      </div>
+      <div class="title-style title-style-after col-sm-3"></div>
+    </div>
+  </div>
+
   <div class="row focus-container">
     <div class="sm-10 focus-info-1">
-      <img src="img/e-golf-city.jpg" class="img" alt="e-golf-city">
+      <div class="focus-img-container">
+        <img src="img/e-golf-city.jpg" class="img-fluid" alt="e-golf-city">
+    </div>
     </div>
   </div>
 
   <div class="row focus-container">
     <div class="sm-10 focus-info-2">
-      <img src="img/e-golf-city.jpg" class="img" alt="e-golf-city">
+      <img src="img/e-golf-city.jpg" class="img-fluid" alt="e-golf-city">
   </div>
+
 </body>

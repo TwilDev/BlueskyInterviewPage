@@ -1,13 +1,65 @@
+.html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x : hidden;
+}
+
 .body {
-  font-family:
+  font-family: 'Varela', sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x : hidden;
 }
 
 .navbar {
   height : 5rem;
+  position : relative;
+}
+
+.navbar-brand {
+  margin : auto;
+  width : 100%;
+  text-align: center;
+}
+
+.vw-main {
+  height : 32px;
+  margin-bottom : .3rem;
+}
+
+.hamburger-inner, ::after {
+  /* Overwriting CSS from Hamburgers */
+  width : 30px!important;
+}
+
+.hamburger-label {
+  padding-left : 3.5rem;
+}
+
+.overlay-nav-sidebar {
+  width: 0;
+  height : 100%;
+  position : fixed;
+  z-index: 1;
+  top : 0;
+  left : 0;
+  background-color : #FFF;
+  overflow-x : hidden;
+  transition : 0.5s;
+  margin-top : 5rem;
+
+}
+
+.overlay-nav-sidebar-container {
+
 }
 
 .main-head {
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .main-head-container {
@@ -16,21 +68,82 @@
 }
 
 .img-main {
-   filter: brightness(60%);
+   filter: brightness(50%);
     width: 100%;
 }
 
 .img-overlay {
-  adding-top : 28r;
   position : absolute;
   color : #FFF;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+
 }
 
 .img-overlay h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    font-weight : 500;
+    margin-bottom : 1.25rem
+}
+
+.btn-action {
+  display : inline-block;
+  cursor : pointer;
+  color : #FFF;
+  background-color : transparent;
+  border : .15rem solid white;
+  font-weight : 300;
+  padding : .3rem;
+  font-size : 1.6rem;
+  transition-duration : 0.4s;
+}
+
+.btn-action:hover {
+  background-color : #FFF;
+  color : #000;
+}
+
+.main-title {
+  text-align : center;
+  margin-bottom : 10rem;
+}
+
+.title-style {
+  display: inline;
+}
+
+.title-container {
+  margin : 0;
+  width: 100%;
+}
+
+.title-container h1 {
+  font-size : 2.2rem;
+  font-weight : 700;
+  display: inline;
+  padding: 25px 15px 0px 15px;
+}
+
+.title-style-before {
+  display : inline-block;
+  margin: auto;
+  content : '';
+  border-top: .4rem solid black;
+  transform: translateY(-.6rem);
+}
+
+.title-style-after {
+  display : inline-block;
+  margin: auto;
+  content : '';
+  border-top: .4rem solid black;
+  transform: translateY(-.6rem);
+}
+
+.vw-min {
+  height : 60px;
+  margin-bottom : 2rem;
 }
 
 .focus-container {
@@ -43,8 +156,133 @@
  padding-bottom : 5rem;
 }
 
+.focus-img-container {
+  overflow : hidden;
+}
+
+.focus-info-1 img {
+  display : block;
+  transition : .3s ease-in-out;
+}
+
+.focus-info-1:hover img {
+  transform : scale(1.1);
+}
+
 .focus-info-2 {
   margin-left: auto;
   margin-right : 5rem;
   padding-bottom : 5rem;
+}
+
+/* Media Queries */
+
+
+@media (max-width : 1400px) {
+  .img-overlay h1 {
+    font-size : 1.75rem;
+  }
+  .title-container h1 {
+    font-size : 2rem;
+  }
+  .vw-min {
+    height : 50px;
+    margin-bottom : 1.25rem;
+  }
+
+}
+
+
+@media (max-width: 915px) {
+  .img-overlay h1 {
+    font-size : 1.5rem;
+  }
+  .title-container h1 {
+    font-size : 1.5rem;
+  }
+  .vw-min {
+    height : 45px;
+    margin-bottom : 1.25rem;
+  }
+  .focus-info-1 {
+    margin-left : 0;
+  }
+  .focus-info-1  img {
+    padding : 4rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    width : 50%;
+  }
+  .hamburger-label {
+    display : none;
+  }
+  .img-overlay h1 {
+    font-size : 1.5rem;
+  }
+  .title-container h1 {
+      font-size : 1.25rem;
+  }
+  .main-title {
+    margin-bottom : 7rem;
+  }
+  .vw-min {
+    height : 40px;
+  }
+  .focus-info-1 {
+    margin-left : 0;
+  }
+  .focus-info-1  img {
+    padding : 4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .img-overlay h1 {
+    font-size : 1rem;
+  }
+  .title-style-before {
+    display : none;
+  }
+  .title-style-after {
+    display : none;
+  }
+  .focus-info-1 {
+    margin-left : 0;
+  }
+  .focus-info-1  img {
+    padding : 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .img-overlay h1 {
+    font-size : .9rem;
+  }
+  .title-container h1 {
+      font-size : 1rem;
+      padding: 5px 5px 0px 5px;
+  }
+  .vw-min {
+    height : 30px;
+    margin-bottom : 1rem;
+  }
+  .title-style-before {
+    display : none;
+  }
+
+  .title-style-after {
+    display : none;
+  }
+  .focus-info-1 {
+    margin-left : 0;
+  }
+  .focus-info-1  img {
+    padding : 1rem;
+  }
+
 }
