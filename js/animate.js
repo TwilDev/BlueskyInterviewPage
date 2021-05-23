@@ -16,7 +16,6 @@ setInterval(function() {
         didScroll = false;
         //check if top of window is set distance for transformation to occur
         if ($(window).scrollTop() >= topDist - 280 && titleTransform == false) {
-
           $(".title-style-before").animate({right: '100px', opacity : 0}, 280);
           $(".title-style-after").animate({left: '100px', opacity : 0}, 280);
           $(".title-style-layer").animate({bottom: '100px', opacity : 0}, 280);
@@ -32,5 +31,16 @@ setInterval(function() {
         }
     }
 }, 600);
+
+// check for user hovering over call to action button
+$('.btn-action').hover(function(){
+  //if true display arrow
+  $('.btn-icon').addClass("btn-icon-show", 100, "linear");
+  //chain function
+}, function(){
+  //remove arrow when leaving
+  $('.btn-icon').removeClass("btn-icon-show", 100, "linear");
+  $('.btn-icon').css("display", "none");
+});
 
 });

@@ -93,15 +93,27 @@
   color : #FFF;
   background-color : transparent;
   border : .15rem solid white;
-  font-weight : 300;
-  padding : .3rem;
-  font-size : 1.6rem;
-  transition-duration : 0.4s;
+  font-weight : 500;
+  padding : .9rem;
+  font-size : 1.4rem;
+  transition-duration : .4s;
 }
 
 .btn-action:hover {
   background-color : #FFF;
   color : #000;
+}
+
+.btn-icon {
+  font-size : 32px;
+  display : none;
+  vertical-align: bottom;
+  color : #000;
+}
+
+.btn-icon-show {
+  display : inline-block!important;
+  padding-left : 1rem;
 }
 
 .main-title {
@@ -262,6 +274,7 @@
 
   .img-overlay h1 {
     font-size : .9rem;
+    margin-bottom : .7rem;
   }
   .title-container h1 {
       font-size : 1rem;
@@ -283,6 +296,10 @@
   }
   .focus-info-1  img {
     padding : 1rem;
+  }
+  .btn-action {
+    font-size : 8px;
+    padding : .2rem;
   }
 
 }
