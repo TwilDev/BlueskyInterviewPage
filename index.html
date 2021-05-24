@@ -18,6 +18,7 @@
   <link href="css/hamburgers.css" rel="stylesheet">
   <script src="js/animate.js"></script>
   <script src="js/nav.js"></script>
+  <script src="js/accordian.js"></script>
 </head>
 
 <body class="body">
@@ -74,15 +75,15 @@
   </div>
 
   <div class="row focus-info-1">
-    <div class="col-sm-12 col-md-9 col-lg-6 focus-img-container">
+    <div class="col-sm-12 col-md-11 col-lg-6 focus-img-container">
       <img src="img/e-golf-city.jpg" class="img-fluid" alt="e-golf-city">
     </div>
-    <div class="col-sm-12 col-md-4 col-lg-6 focus-info-text">
+    <div class="col-sm-12 col-md-11 col-lg-6 focus-info-text">
       <div class="focus-info-head">
         <h2>Meet the <span class="focus-head-bold">new</span> e-Golf</h2>
       </div>
       <span class="focus-info-body">
-        Taking steps toward a more sustainable future. The new e-Golf takes the original principles and pushes them further than every before. Exceptional handling with plenty of space, all while remaining incredibly quiet and practical with a range of 200 miles.
+        Taking steps toward a more sustainable future. The new e-Golf takes the original principles and pushes them further than every before. Exceptional handling with plenty of space, all while remaining incredibly quiet and practical with a range of 186 miles.
       </span>
       <div class="focus-info-link" id="view-car-link">
         <a href="#">View Our Models <i class="fas fa-external-link-alt"></i></a>
@@ -90,9 +91,43 @@
     </div>
   </div>
 
-  <div class="container row focus-container">
-    <div class="sm-10 focus-info-2">
-      <img src="img/e-golf-city.jpg" class="img-fluid" alt="e-golf-city">
+  <div class="row focus-info-2">
+    <div class="col-sm-12 col-md-12 col-lg-12 focus-info-head focus-image-head">
+      <div class="focus-info-head">
+        <h2>Explore the <span class="focus-head-bold">future</span> of driving</h2>
+      </div>
+    </div>
+    <div class="col-lg-5 accordian-container">
+      <ul class="focus-accordian">
+        <li>
+          <a class="focus-accordian-toggle" id="acc-performance">Performance <i class="fas fa-angle-down acc-arrow"></i></a>
+          <p class="focus-accordian-body">
+            The e-Golf is far simplier to maintain than the traditional diesel or petrol car without compromise. Providing a smooth,
+            easy driving experience, with proven Volkswagen dependency. Able to <strong>travel from Brightton to London and back</strong>
+            all on a single charge.
+          </p>
+        </li>
+        <li>
+          <a class="focus-accordian-toggle" id="acc-design">Design <i class="fas fa-angle-down acc-arrow"></i></a>
+          <p class="focus-accordian-body">
+            The new e-Golf expands on the classic styling of the golf, intertwining it's aspects with a modern clean look. Equipped with
+            LED headlights, blue design elements and aerodynamic optimisations give the electric vehicle its unique flair.
+          </p>
+        </li>
+        <li>
+          <a class="focus-accordian-toggle" id="acc-driving-xp">Driving Experience <i class="fas fa-angle-down acc-arrow"></i></a>
+          <p class="focus-accordian-body">
+            The e-Golf provides for comfort and practicality, being economical, costing <strong>4p per mile</strong>, while
+            providing a competitive range, and plenty of space in the cabin and boot. The ideal car, with proven Volkswagen quality.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-md-11 col-lg-7 focus-img-container focus-img-sole float-right">
+      <img src="img/e-golf-acc-performance.jpg" class="img-fluid" id="img-acc" alt="e-golf-city">
+    </div>
   </div>
+
+
 
 </body>

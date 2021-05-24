@@ -32,6 +32,7 @@ setInterval(function() {
     }
 }, 600);
 
+
 // check for user hovering over call to action button
 $('.btn-action').hover(function(){
   //if true display arrow
@@ -42,5 +43,7 @@ $('.btn-action').hover(function(){
   $('.btn-icon').removeClass("btn-icon-show", 100, "linear");
   $('.btn-icon').css("display", "none");
 });
+
+
 
 });
