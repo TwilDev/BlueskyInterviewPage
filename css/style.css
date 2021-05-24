@@ -449,6 +449,20 @@
   .focus-footnote-body {
     padding : 5rem 5rem 8rem 5rem;
   }
+  .footer-overlay {
+    top : 10%;
+    left : 0;
+  }
+  .footer-list {
+    display : block;
+  }
+  .footer-list li {
+    padding-top : 1rem;
+  }
+  .footer-list button {
+    font-size : 1rem;
+
+  }
 
 }
 
@@ -561,6 +575,16 @@
   }
   .focus-footnote-body p {
     font-size : 16px;
+  }
+  .focus-footnote-container {
+    padding-bottom : 30rem;
+  }
+  .footer-overlay {
+    top : 0;
+    left : 0;
+  }
+  .footer-list button {
+    font-size : 12px;
   }
 
 }

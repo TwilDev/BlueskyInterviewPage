@@ -143,7 +143,12 @@ and to create positive impacts on society.</p>
 
   <div class="row footer-img">
     <div class="focus-img-container">
-      <img src="img/e-golf-footer-2.jpg" class="img-fluid img-footer">
+      <picture>
+        <source media="(max-width: 768px)" srcset="img/e-golf-footer-small.jpg">
+        <source media="(min-width: 800px)" srcset="img/e-golf-footer-2.jpg">
+        <source media="(max-width: 480px)" srcset="img/e-golf-footer-mobile.jpg">
+        <img src="img/e-golf-footer-2.jpg" class="img-fluid img-footer">
+      </picture>
     </div>
     <div class="footer-overlay">
       <ul class="footer-list">
@@ -162,9 +167,6 @@ and to create positive impacts on society.</p>
       </ul>
     </div>
   </div>
-
-
-
 
 </body>
 </html>
