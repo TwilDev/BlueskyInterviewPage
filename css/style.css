@@ -1,10 +1,4 @@
-.html {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x : hidden;
-}
+
 
 .body {
   font-family: 'Varela', sans-serif;
@@ -119,6 +113,11 @@
 .main-title {
   text-align : center;
   margin-bottom : 10rem;
+  overflow-x : hidden;
+}
+
+.row .main-title {
+  margin-right : 1px!important;
 }
 
 .title-style {
@@ -177,8 +176,45 @@
   transition : .3s ease-in-out;
 }
 
-.focus-info-1:hover img {
+/*
+.focus-img-container:hover img {
   transform : scale(1.1);
+}*/
+
+.focus-info-head {
+  padding-top : 2rem;
+  padding-bottom : 2rem;
+}
+
+.focus-info-head h2 {
+  font-size : 2.8rem;
+  font-weight : 100;
+}
+
+.focus-info-text {
+  padding-right : 10rem;
+}
+
+.focus-head-bold {
+  font-weight : 1000;
+}
+
+.focus-info-body {
+  font-size : 22px;
+  font-weight : 100;
+  margin-right : 10rem;
+  color : #848484;
+}
+
+#view-car-link {
+  padding-top : 2rem;
+}
+
+.focus-info-link a {
+  font-size : 20px;
+  font-weight : 1000;
+  color : #001e50;
+  display : inline-block;
 }
 
 .focus-info-2 {
@@ -220,7 +256,7 @@
     margin-left : 0;
   }
   .focus-info-1  img {
-    padding : 4rem;
+
   }
 }
 
@@ -239,7 +275,7 @@
       font-size : 1.25rem;
   }
   .main-title {
-    margin-bottom : 7rem;
+    margin-bottom : 4rem;
   }
   .vw-min {
     height : 40px;
@@ -247,9 +283,7 @@
   .focus-info-1 {
     margin-left : 0;
   }
-  .focus-info-1  img {
-    padding : 4rem;
-  }
+
 }
 
 @media (max-width: 640px) {
@@ -264,9 +298,6 @@
   }
   .focus-info-1 {
     margin-left : 0;
-  }
-  .focus-info-1  img {
-    padding : 4rem;
   }
 }
 
@@ -287,7 +318,6 @@
   .title-style-before {
     display : none;
   }
-
   .title-style-after {
     display : none;
   }
@@ -295,11 +325,26 @@
     margin-left : 0;
   }
   .focus-info-1  img {
-    padding : 1rem;
+    padding-left : 0!important;
+    padding-right : 1rem;
   }
   .btn-action {
     font-size : 8px;
     padding : .2rem;
+  }
+  .focus-info-text {
+    margin : 0rem 0rem 1rem 1rem;
+    padding-right : 1rem;
+  }
+  .focus-info-head h2 {
+    font-size : 2rem;
+  }
+  .focus-info-body {
+    font-size : 16px;
+    text-align : center;
+  }
+  .focus-info-link a{
+    font-size : 16px;
   }
 
 }
