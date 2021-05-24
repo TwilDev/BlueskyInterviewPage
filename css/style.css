@@ -25,7 +25,7 @@
   margin-bottom : .3rem;
 }
 
-.hamburger-inner, ::after {
+.hamburger-inner::before {
   /* Overwriting CSS from Hamburgers */
   width : 30px!important;
 }
@@ -226,7 +226,7 @@
 
 .focus-info-2 {
   margin-left : 5rem;
-  padding-bottom : 5rem;
+  padding-bottom : 15rem;
   align-self: center;
 }
 
@@ -266,6 +266,69 @@
   opacity : 80%;
 }
 
+.focus-footnote-container {
+  position : relative;
+  z-index: 0;
+  padding-bottom : 40rem;
+}
+
+.focus-footnote-head {
+  border-bottom : .2rem solid #001e50;
+  position : absolute;
+  z-index : 1;
+  height : 200px;
+}
+
+.focus-footnote-top {
+
+  position : absolute;
+  z-index : 2;
+  height : 50px;
+  background: radial-gradient(circle at 0% 0%, rgb(0, 67, 122) 0%, rgb(0, 30, 80) 100%);
+  padding-bottom : 20rem;
+  margin-top : 5rem;
+  margin-right : 20rem;
+  margin-left : 20rem;
+}
+
+.focus-footnote-top h2 {
+  color : #FFF
+}
+
+.focus-footnote-top p {
+  padding-top : 3rem;
+  text-align : center;
+  font-size : 20px;
+  color : #FFF;
+}
+
+.focus-footnote-body {
+  padding : 5rem 10rem 8rem 10rem;
+}
+
+.footer-img {
+  position : relative;
+}
+
+.img-footer {
+  filter : brightness(60%);
+}
+
+.footer-overlay {
+  position : absolute;
+  color : #FFF;
+  top: 50%;
+  left: 20%;
+}
+
+.footer-list {
+  display : inline-flex;
+  list-style: none;
+}
+
+.footer-overlay button {
+    margin : 0rem 2rem 0rem 2rem;
+}
 
 
 /* Media Queries */
@@ -297,6 +360,18 @@
   }
   .focus-accordian-body {
     font-size : 16px;
+  }
+  .focus-footnote-top {
+    margin : 0;
+  }
+  .focus-footnote-body {
+    padding : 5rem 5rem 8rem 5rem;
+  }
+  .focus-footnote-body h2 {
+    text-align : center;
+  }
+  .focus-footnote-body p {
+    padding-top : 1.5rem;
   }
 
 }
@@ -367,6 +442,12 @@
   }
   .focus-img-sole {
     margin-left : 1rem;
+  }
+  .focus-footnote-top {
+    padding-bottom : 22rem;
+  }
+  .focus-footnote-body {
+    padding : 5rem 5rem 8rem 5rem;
   }
 
 }
@@ -471,6 +552,15 @@
   }
   .focus-accordian-body {
     font-size : 14px;
+  }
+  .focus-footnote-body {
+    padding : 3rem 2.5rem 8rem 1.5rem;
+  }
+  .focus-footnote-body h2 {
+    font-size : 1.5rem;
+  }
+  .focus-footnote-body p {
+    font-size : 16px;
   }
 
 }

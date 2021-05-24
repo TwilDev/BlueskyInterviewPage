@@ -35,15 +35,14 @@ setInterval(function() {
 
 // check for user hovering over call to action button
 $('.btn-action').hover(function(){
-  //if true display arrow
-  $('.btn-icon').addClass("btn-icon-show", 100, "linear");
+  //Get child I element and add class with transition
+  $($(this).find('i').addClass("btn-icon-show", 100, "linear"));
+
   //chain function
 }, function(){
   //remove arrow when leaving
-  $('.btn-icon').removeClass("btn-icon-show", 100, "linear");
-  $('.btn-icon').css("display", "none");
+  $($(this).find('i').removeClass("btn-icon-show", 100, "linear"));
+  $($(this).find('i').css("display", "none"));
 });
-
-
 
 });
