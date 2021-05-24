@@ -373,6 +373,15 @@
   .focus-footnote-body p {
     padding-top : 1.5rem;
   }
+  .focus-footnote-container {
+    padding-bottom : 35rem;
+  }
+  .footer-overlay {
+    left : 0;
+  }
+  .footer-list button {
+    font-size : 18px;
+  }
 
 }
 
