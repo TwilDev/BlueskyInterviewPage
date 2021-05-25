@@ -44,12 +44,31 @@
   background-color : #FFF;
   overflow-x : hidden;
   transition : 0.5s;
-  margin-top : 5rem;
+}
+
+
+.overlay-nav-link {
+  padding : 5rem 0rem 0rem 5rem;
+  height : 100%;
+  width: 100%;
+  display : inline-block;
+}
+
+.overlay-nav-link a {
+  font-size : 2rem;
+  padding-left : 5rem;
+}
+
+.list-group-item {
+  padding : 2rem 0rem 2rem 4rem;
+  border-right : none;
+  border-top : none;
+  border-bottom : none;
 
 }
 
-.overlay-nav-sidebar-container {
-
+.list-group-item:hover {
+  color : #001e50;
 }
 
 .main-head {
@@ -331,6 +350,24 @@
 }
 
 
+.footer-company-info {
+  padding : 3rem 0rem 1rem 0;
+}
+
+.footer-social i {
+  font-size : 3.5rem;
+  color : #001e50;
+}
+
+.footer-final {
+  background-color : #f8f9fa;
+  width : 100%;
+}
+
+.footer-final p {
+  padding: 1rem 1rem 0 1rem;
+}
+
 /* Media Queries */
 
 
@@ -381,6 +418,10 @@
   }
   .footer-list button {
     font-size : 18px;
+  }
+  .overlay-nav-link a {
+    font-size : 1.5rem;
+    padding-left : 3rem;
   }
 
 }
@@ -446,8 +487,13 @@
   .focus-info-2 {
     margin-left : 1rem;
   }
+  .focus-info-head {
+    padding-bottom : 1rem;
+    padding-left : 0rem;
+  }
   .accordian-container {
-    padding-right : 3rem;
+    padding-right : 6rem;
+    padding-left : 3rem;
   }
   .focus-img-sole {
     margin-left : 1rem;
@@ -492,7 +538,14 @@
 
 
 @media (max-width: 480px) {
-
+  .overlay-nav-link a {
+    font-size : 1.5rem;
+    padding-left : 3rem;
+  }
+  .overlay-nav-link {
+    padding-left : 1rem;
+    padding-top : 1.5rem;
+  }
   .img-overlay {
     top : 60%;
   }
@@ -501,7 +554,7 @@
     margin-bottom : .7rem;
   }
   .title-container h1 {
-      font-size : 1rem;
+      font-size : 1.5rem;
       padding: 5px 5px 0px 5px;
   }
   .vw-min {
